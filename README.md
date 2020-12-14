@@ -8,7 +8,7 @@ npm install @codewell/target-value
 
 ## Basic Usage
 
-```JSX
+```JavaScript
 import targetValue from '@codewell/target-value';
 
 const eventHandler = (inputValue) => {
