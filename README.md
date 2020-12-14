@@ -8,7 +8,7 @@ npm install @codewell/target-value
 
 ## Basic Usage
 
-```JavaScript
+```JSX
 import targetValue from '@codewell/target-value';
 
 const eventHandler = (inputValue) => {
@@ -20,13 +20,10 @@ const sayHello = (inputValue, hello, there) => {
   console.log(hello, there, inputValue)
 }
 
-const SomeComponent = (props) => (
-  <input onChange={targetValue(eventHandler)} />
-  <input onChange={targetValue(sayHello, "hello", "there")} />
+const SomeComponent = () => (
+  <>
+    <input onChange={targetValue(eventHandler)} />
+    <input onChange={targetValue(sayHello, "hello", "there")} />
+  </>
 );
-
-
-
-
 ```
-
